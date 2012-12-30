@@ -1,7 +1,11 @@
 $(function(){
-	
-	$('#navigation .button-filter').ayToggleElement($('#filter'), {targetClass: 'hidden'});
-	$('#navigation .button-summary').ayToggleElement($('#metrics-summary'), {targetClass: 'hidden'});
+
+	try
+	{
+	        $('#navigation .button-filter').ayToggleElement($('#filter'), {targetClass: 'hidden'});
+	        $('#navigation .button-summary').ayToggleElement($('#metrics-summary'), {targetClass: 'hidden'});
+	}
+	catch(err){  }
 
 	$('table.ay-sort').ayTableSort();
 	$('thead.ay-sticky').ayTableSticky();
